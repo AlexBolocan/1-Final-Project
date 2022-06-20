@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Bike Factory</title>
+  <link rel="shortcut icon" href="/icon/logo.svg" type="image/svg">
+  <title > Bike Factory</title>
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
   rel="stylesheet"
@@ -16,156 +17,158 @@
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
   crossorigin="anonymous"
 ></script>
-
+<script src="jvScript.js"></script>
 </head>
-<body>
+<body > 
+   <!-- header body -->
   <div class="container">
-    <!-- header body -->
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 500 500" xml:space="preserve"><use xlink:href="#bootstrap"/>          <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
-          <g><g transform="translate(0.000000,404.000000) scale(0.070000,-0.070000)">
-            <path d="M6899,3175.7c-427.8-233-499.8-821.8-139.8-1139.5c355.8-313.5,906.5-220.3,1097.1,182.1c152.5,326.2,55.1,711.7-237.2,927.7C7453.9,3268.9,7098.1,3285.9,6899,3175.7z"/>
-            <path d="M4903.8,2684.3C4183.7,2527.6,3679.6,2231.1,3184,1672c-538-614.2-571.9-1296.2-89-1732.5c334.6-300.8,787.9-444.8,1885-597.3c279.6-42.4,525.3-89,542.2-105.9c17-16.9-63.5-190.6-182.1-385.5c-682-1118.3-906.5-2151.9-559.2-2545.8c114.4-135.5,169.4-84.7,241.5,228.8c135.6,605.7,529.5,1275,1211.5,2067.1c398.2,461.7,525.3,698.9,478.7,902.3C6666-272.3,6577.1-136.8,6386.4-9.7C6145,155.5,5950.1,219,5086,439.3c-796.4,199.1-974.3,258.4-974.3,313.5c0,110.1,542.2,440.6,804.8,495.6c80.5,12.7,177.9,33.9,211.8,46.6c46.6,12.7,76.2-38.1,114.4-194.9c93.2-381.2,398.2-698.9,770.9-804.8c228.8-63.5,783.7-50.8,1080.2,25.4c567.6,148.3,1380.9,673.5,1380.9,898c0,122.9-105.9,122.9-766.7-16.9c-605.8-122.8-1177.6-152.5-1380.9-63.5c-118.6,46.6-139.8,80.5-139.8,203.3c0,76.2,46.6,233,101.6,343.1c177.9,351.6,161,516.8-72,749.8C5916.2,2735.2,5509.6,2811.4,4903.8,2684.3z"/>
-            <path d="M8707.7,1083.2c-182.1-80.5-622.7-567.6-817.5-902.3c-169.4-288-338.9-686.2-432.1-1016.6c-46.6-156.7-72-177.9-211.8-203.3c-643.9-110.1-1321.6-771-1508-1478.3c-67.8-254.2-76.2-775.2-12.7-1042.1c207.6-906.5,1105.6-1609.7,2050.2-1609.7c1279.3,0,2291.6,1164.9,2101,2414.5c-131.3,889.6-830.2,1597-1711.3,1745.2c-156.7,25.4-283.8,67.8-283.8,97.4c0,76.2,326.2,728.6,474.4,944.6c72,110.1,258.4,326.2,406.6,482.9c292.3,305,347.4,461.7,194.9,571.9C8868.7,1155.2,8868.7,1155.2,8707.7,1083.2z M8495.9-1373.7c1139.5-559.2,1389.4-2037.5,487.1-2880.5C7949.5-5224.2,6289-4643.9,6060.3-3237.5c-118.6,715.8,292.3,1512.2,940.4,1834.2c144,72,279.6,131.3,305,131.3c29.6,0,42.4-127.1,33.9-381.2c-21.2-466,67.8-906.5,245.7-1215.7c118.6-203.3,199.1-296.5,233-258.4c8.5,4.2-21.2,165.2-67.8,351.6c-110.2,466-97.5,1173.4,29.6,1541.9C7809.7-1140.7,8157.1-1208.5,8495.9-1373.7z"/>
-            <path d="M1680.3-1043.3c-584.6-139.8-1092.9-546.5-1355.5-1084.4C-81.9-2953.7,70.6-3872.9,722.9-4538c923.4-931.9,2465.3-809.1,3219.3,262.6c245.7,351.6,347.4,660.8,372.8,1122.5c29.7,639.6-186.4,1190.3-635.4,1605.4C3150.1-1056,2404.6-865.4,1680.3-1043.3z M2815.5-1318.6c300.8-110.2,631.2-372.8,834.5-665c521-745.5,355.8-1842.7-368.5-2384.8C2375-5054.7,1116.9-4741.3,634-3712C320.5-3042.7,468.8-2267.5,1011-1721C1502.3-1225.4,2171.6-1072.9,2815.5-1318.6z"/></g></g>
-        </svg>
+        <img src="/icon/logo.svg" alt=""> 
       </a>
-
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home 
+        <li class="nav-item"><a href="#" class="nav-link active " aria-current="page">Acasă 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 20 20">
           <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
           <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
         </svg></a></i></li>
-        <li class="nav-item"><a href="#" class="nav-link ">Favorite 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-          </svg>  
-        </a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Cart
+        <li class="nav-item"><a href="#" class="nav-link ">Coș
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 20 20">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg>
-        </a></li>
+          </svg></a></li>
       </ul>
     </header>
   </div>
-  <div class="container">
-    <div class="row ">
+  <!-- main contetn -->
+  <div  id="mainContent" class="container">
+    <div class="row gy-3">
+
     <!-- primul articol -->
-    <div class="gap-8 col-lg-4 col-md-6 col-sm-8 "> 
-     <img src="https://s13emagst.akamaized.net/products/44278/44277453/images/res_c507aeaaab569725a22c690518a15533.jpg" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
-      <div class=" d-md-flex justify-content-md-end">
-     <button class="btn btn-outline-secondary me-md-2 ">Favorite
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-      </svg>  
-       </button>
-        <button class="btn btn-outline-secondary  ">Details
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-      </svg>
-       </button>
+    <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
+      <div class="card" > 
+       <div class=" d-md-flex justify-content-md-end">
+         <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+         </svg>
+          </button>
+          </div> 
+          <img src="https://s13emagst.akamaized.net/products/44278/44277453/images/res_c507aeaaab569725a22c690518a15533.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Bicicletă Eighty Eight MTB</h4>
+         <p class="card-text">2000 RON</p>
+          </div>
      </div>
     </div>
+
     <!-- al 2lea articol -->
     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-      <img src="https://s13emagst.akamaized.net/products/40969/40968610/images/res_f629a255a9db4340601d8cb6630c397f.jpg" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
-       <div class=" d-md-flex justify-content-md-end">
-         <button class="btn btn-outline-secondary me-md-2 ">Favorite
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-       </svg>  
-        </button>
-         <button class="btn btn-outline-secondary ">Details
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-       </svg>
-        </button>
+     <div class="card" > 
+      <div class=" d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+         </button>
+         </div> 
+         <img src="https://s13emagst.akamaized.net/products/40969/40968610/images/res_f629a255a9db4340601d8cb6630c397f.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Bicicleta Omega Thomas MTB</h4>
+        <p class="card-text">2000 RON</p>
+         </div>
+    </div>
      </div>
-     </div>
+
     <!-- al 3lea articol -->
     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-      <img src="https://s13emagst.akamaized.net/products/43477/43476311/images/res_e0e6b6c7114dd8ccebaf267eb0a14233.jpg" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
-       <div class=" d-md-flex justify-content-md-end">
-         <button class="btn btn-outline-secondary me-md-2">Favorite
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-       </svg>  
-        </button>
-         <button class="btn btn-outline-secondary ">Details
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-       </svg>
-        </button>
-     </div>
-   </div>
+     <div class="card" > 
+      <div class=" d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+         </button>
+         </div> 
+      <img src="https://s13emagst.akamaized.net/products/43477/43476311/images/res_e0e6b6c7114dd8ccebaf267eb0a14233.jpg" class="card-img-top float-sm-start" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Bicicleta CARPAT Magnum MTB</h4>
+        <p class="card-text">2000 RON</p>
+      </div>
+      </div>  
+    </div>
+
     <!-- al 4lea articol -->
     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-      <img src="https://s13emagst.akamaized.net/products/39630/39629804/images/res_07998473feb589c019aed62a1a3d94e0.jpg" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
-       <div class="d-md-flex justify-content-md-end">
-         <button class="btn btn-outline-secondary me-md-2">Favorite
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-       </svg>  
-        </button>
-         <button class="btn btn-outline-secondary ">Details
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-       </svg>
-        </button>
-     </div>
-   </div>
-    <!-- al 5lea articol -->
-    <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-      <img src="https://s13emagst.akamaized.net/products/40951/40950821/images/res_60f8a11bec90d7abefe33b13e213d549.jpg" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
-       <div class= "d-md-flex justify-content-md-end">
-         <button class="btn btn-outline-secondary me-md-2">Favorite
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-       </svg>  
-        </button>
-         <button class="btn btn-outline-secondary ">Details
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-       </svg>
-        </button>
-     </div>
-   </div>
-    <!-- al 6lea articol -->
-    <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-      <img src="https://contents.mediadecathlon.com/m5582469/k$e4385458512a2ae2a7e7b697adca2185/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
+      <div class="card" > 
        <div class=" d-md-flex justify-content-md-end">
-         <button class="btn btn-outline-secondary me-md-2">Favorite
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-       </svg>  
-        </button>
-         <button class="btn btn-outline-secondary ">Details
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-       </svg>
-        </button>
+         <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+         </svg>
+          </button>
+          </div> 
+       <img src="https://s13emagst.akamaized.net/products/39630/39629804/images/res_07998473feb589c019aed62a1a3d94e0.jpg" class="card-img-top float-sm-start" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Bicicleta Acura MTB</h4>
+         <p class="card-text">2000 RON</p>
+       </div>
+       </div>  
      </div>
-   </div>
-    <!-- al 7lea articol -->
-    <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-      <img src="https://contents.mediadecathlon.com/m5876902/k$5806ff1dc16cd15e797177cc953ec977/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
+    
+     <!-- al 5lea articol -->
+     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
+      <div class="card" > 
+       <div class=" d-md-flex  justify-content-md-end">
+         <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+         </svg>
+          </button>
+          </div> 
+       <img src="https://s13emagst.akamaized.net/products/40951/40950821/images/res_60f8a11bec90d7abefe33b13e213d549.jpg" class="card-img-top float-sm-start" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Bicicleta Acura MTB-HT</h4>
+         <p class="card-text">2000 RON</p>
+       </div>
+       </div>  
+     </div>
+    
+     <!-- al 6lea articol -->
+     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
+      <div class="card" > 
        <div class=" d-md-flex justify-content-md-end">
-         <button class="btn btn-outline-secondary me-md-2">Favorite
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 20 20">
-         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-       </svg>  
-        </button>
-         <button class="btn btn-outline-secondary ">Details
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-       </svg>
-        </button>
+         <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+         </svg>
+          </button>
+          </div> 
+       <img src="https://contents.mediadecathlon.com/m5582469/k$e4385458512a2ae2a7e7b697adca2185/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960" class="card-img-top float-sm-start" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Bicicleta Afisport M2 MTB </h4>
+         <p class="card-text">2000 RON</p>
+       </div>
+       </div>  
+     </div>
+    
+     <!-- al 7lea articol -->
+     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
+      <div class="card" > 
+       <div class=" d-md-flex justify-content-md-end">
+         <button class="btn btn-outline-secondary me-md-2 btn-lg">DETALII
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+         </svg>
+          </button>
+          </div> 
+       <img src="https://contents.mediadecathlon.com/m5876902/k$5806ff1dc16cd15e797177cc953ec977/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960" class="card-img-top float-sm-start" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Bicicletă Omega Thomas MTB</h4>
+         <p class="card-text">2000 RON</p>
+       </div>
+       </div>  
      </div>
    </div>
-  </div>
 </div>
 </body>
 </html>

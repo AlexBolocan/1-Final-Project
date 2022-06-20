@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="jvScript.js"></script>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/icon/logo.svg" type="image/svg" />
+    <title>Bike Factory Cart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="jsHeaderScript.js"></script> -->
+  </head>
+  <body>
+    <!-- header -->
+    <div id="idHeaderPage" class="container">
+      <!-- header body -->
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <img src="/icon/logo.svg" alt="" />
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link" aria-current="page"
+              >Acasa
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-house"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active"
+              >Cos
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart3"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <!-- continut cos -->
+    <div class="container">
+      <div class="card mb-3 h-40">
+        <div class="d-md-flex justify-content-md-end">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Sterge
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-trash"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+              />
+            </svg>
+          </button>
+        </div>
+      <div class="row g-0 text-end">
+          <div class="col-md-4">
+            <img
+              src="https://s13emagst.akamaized.net/products/39630/39629804/images/res_07998473feb589c019aed62a1a3d94e0.jpg"
+              class="img-fluid rounded-start "
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8  ">
+                <div class="card-body text-start">
+              <h4 class="card-title">Bicicletă Eighty Eight MTB</h4>
+              <p class="card-text">
+                Bicicleta Eighty Eight MTB Challenge 29 inch, Manete Schimbator Secventiale, 21 Viteze, Frane Disc fata/spate, Negru/Portocaliu/Bleu.
+              </p>
+              </div>
+              <div class="input-group mb-8 " style="width: 9rem; height: 3rem;">
+                <input
+                  type="number"
+                  class="form-control text-end  "
+                  placeholder="Stock"
+                  aria-label="Add part on stock"
+                  aria-describedby="button-addon2"
+                  value="1"
+                />
+              </div>
+            </div>
+        <div class="card-footer">
+            <p><h4 class="card-title text-end">Total: 4000 RON</h4></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
 </html>

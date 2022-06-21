@@ -7,7 +7,8 @@
       "https://s13emagst.akamaized.net/products/44278/44277453/images/res_c507aeaaab569725a22c690518a15533.jpg",
       "https://s13emagst.akamaized.net/products/44278/44277453/images/res_ae1616a9fa3fd3e2bacf85d943e354c3.jpg",
       "https://s13emagst.akamaized.net/products/44278/44277453/images/res_fbecbd9d66176b7b367cde4373cc1f9b.jpg"
-    ]
+    ],
+    "stoc": "10 buc"
   },
   {
     "title": "Bicicleta Omega Thomas MTB",
@@ -17,7 +18,9 @@
       "https://s13emagst.akamaized.net/products/40969/40968610/images/res_f629a255a9db4340601d8cb6630c397f.jpg",
       "https://s13emagst.akamaized.net/products/40969/40968612/images/res_d1edec0433ff5fec7a474ad750b921f1.jpg",
       "https://s13emagst.akamaized.net/products/40969/40968610/images/res_c3437b372e9a2e455ac3af3e5f769b79.jpg"
-    ]
+    ],
+    "stoc": "10 buc"
+
   },
   {
     "title": "Bicicleta CARPAT Magnum MTB",
@@ -37,7 +40,9 @@
       "https://s13emagst.akamaized.net/products/39630/39629804/images/res_07998473feb589c019aed62a1a3d94e0.jpg",
       "https://s13emagst.akamaized.net/products/39630/39629810/images/res_8d348cd211bc9824672281b740d6f0fd.jpg",
       "https://s13emagst.akamaized.net/products/39630/39629810/images/res_22e9031271ee58bd1775f32aaf0fecde.jpg"
-    ]
+    ],
+    "stoc": "10 buc"
+
   },
   {
     "title": "Bicicleta Acura MTB",
@@ -47,7 +52,9 @@
       "https://s13emagst.akamaized.net/products/40951/40950821/images/res_60f8a11bec90d7abefe33b13e213d549.jpg",
       "https://s13emagst.akamaized.net/products/40951/40950821/images/res_992545fa334d559fbc53f60113a6218d.jpg",
       "https://s13emagst.akamaized.net/products/40951/40950821/images/res_17c169c0c32c5dcf09d63678857b44a9.jpg"
-    ]
+    ],
+    "stoc": "10 buc"
+
   },
   {
     "title": "Bicicletă Eighty Eight MTB",
@@ -57,7 +64,9 @@
       "https://contents.mediadecathlon.com/m5582469/k$e4385458512a2ae2a7e7b697adca2185/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960",
       "https://contents.mediadecathlon.com/m5582464/k$a3b85ea28629af8fee65ed731600631d/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960",
       "https://contents.mediadecathlon.com/m5582473/k$a8991d61cba2964a6b8592f6539f5a14/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960"
-    ]
+    ],
+    "stoc": "10 buc"
+
   },
   {
     "title": "Bicicletă Eighty Eight MTB",
@@ -67,6 +76,89 @@
       "https://contents.mediadecathlon.com/m5876902/k$5806ff1dc16cd15e797177cc953ec977/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960",
       "https://contents.mediadecathlon.com/m5876903/k$f4a56ee2d1e29d00d47b31c149dec17e/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960",
       "https://contents.mediadecathlon.com/m5876901/k$d4802a4582271c0e9ac299884e5bd9b3/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960"
+    ],
+    "stoc": "10 buc"
+
+  },
+  {
+    "title": "Bicicletă Eighty Eight MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta Eighty Eight MTB Challenge 29 inch, Manete Schimbator Secventiale, 21 Viteze, Frane Disc fata/spate, Negru/Portocaliu/Bleu",
+    "photo": [
+      "https://s13emagst.akamaized.net/products/44278/44277453/images/res_c507aeaaab569725a22c690518a15533.jpg",
+      "https://s13emagst.akamaized.net/products/44278/44277453/images/res_ae1616a9fa3fd3e2bacf85d943e354c3.jpg",
+      "https://s13emagst.akamaized.net/products/44278/44277453/images/res_fbecbd9d66176b7b367cde4373cc1f9b.jpg"
+    ],
+    "stoc": "10 buc"
+  },
+  {
+    "title": "Bicicleta Omega Thomas MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta MTB de munte Carpat MTB Wrangler JSX2979, cadru Aluminiu, echipare Shimano, suspensie fata reglabila cu blocator, roata 29 inch, frana disc fata/spate hidraulice, 24 viteze, gri/portocaliu",
+    "photo": [
+      "https://s13emagst.akamaized.net/products/40969/40968610/images/res_f629a255a9db4340601d8cb6630c397f.jpg",
+      "https://s13emagst.akamaized.net/products/40969/40968612/images/res_d1edec0433ff5fec7a474ad750b921f1.jpg",
+      "https://s13emagst.akamaized.net/products/40969/40968610/images/res_c3437b372e9a2e455ac3af3e5f769b79.jpg"
+    ],
+    "stoc": "10 buc"
+
+  },
+  {
+    "title": "Bicicleta CARPAT Magnum MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta MTB de munte CARPAT Magnum JSX2708, cadru Aluminiu, echipare Shimano, suspensie fata, roata 27.5 inch, frana disc fata/spate, 21 viteze, roti magneziu, rosu cu alb",
+    "photo": [
+      "https://s13emagst.akamaized.net/products/43477/43476311/images/res_e0e6b6c7114dd8ccebaf267eb0a14233.jpg",
+      "https://s13emagst.akamaized.net/products/43477/43476311/images/res_df392936f4c3a4cef8eb6b1711f335ea.jpg",
+      "https://s13emagst.akamaized.net/products/43477/43476311/images/res_4b7d2250d2ea677521176473a392a08e.jpg"
     ]
+  },
+  {
+    "title": "Bicicletă Eighty Eight MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta Mountain Bike Acura, Shimano Tourney TY-21, 21 viteze, Cadru Aluminiu, Roti 29 Inch, Frane Hidraulice, Carpat CSC29/99H, Culoare Negru/Alb/Albastru",
+    "photo": [
+      "https://s13emagst.akamaized.net/products/39630/39629804/images/res_07998473feb589c019aed62a1a3d94e0.jpg",
+      "https://s13emagst.akamaized.net/products/39630/39629810/images/res_8d348cd211bc9824672281b740d6f0fd.jpg",
+      "https://s13emagst.akamaized.net/products/39630/39629810/images/res_22e9031271ee58bd1775f32aaf0fecde.jpg"
+    ],
+    "stoc": "10 buc"
+
+  },
+  {
+    "title": "Bicicleta Acura MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta MTB-HT Acura, Shimano Tourney TY-21, 21 viteze, Cadru Aluminiu, Roti 26 Inch, Frane Hidraulice, Carpat C2699H, culoare Gri/Negru/Verde",
+    "photo": [
+      "https://s13emagst.akamaized.net/products/40951/40950821/images/res_60f8a11bec90d7abefe33b13e213d549.jpg",
+      "https://s13emagst.akamaized.net/products/40951/40950821/images/res_992545fa334d559fbc53f60113a6218d.jpg",
+      "https://s13emagst.akamaized.net/products/40951/40950821/images/res_17c169c0c32c5dcf09d63678857b44a9.jpg"
+    ],
+    "stoc": "10 buc"
+
+  },
+  {
+    "title": "Bicicletă Eighty Eight MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta Mtb Afisport M2 - 29 inch, Negru",
+    "photo": [
+      "https://contents.mediadecathlon.com/m5582469/k$e4385458512a2ae2a7e7b697adca2185/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960",
+      "https://contents.mediadecathlon.com/m5582464/k$a3b85ea28629af8fee65ed731600631d/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960",
+      "https://contents.mediadecathlon.com/m5582473/k$a8991d61cba2964a6b8592f6539f5a14/sq/bicicleta-mtb-afisport-m2-29-inch-negru.jpg?f=960x960"
+    ],
+    "stoc": "10 buc"
+
+  },
+  {
+    "title": "Bicicletă Eighty Eight MTB",
+    "price": "2000 RON",
+    "description": "Bicicleta mountainbike Omega Thomas 27.5 inch, cadru 49 cm, galben",
+    "photo": [
+      "https://contents.mediadecathlon.com/m5876902/k$5806ff1dc16cd15e797177cc953ec977/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960",
+      "https://contents.mediadecathlon.com/m5876903/k$f4a56ee2d1e29d00d47b31c149dec17e/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960",
+      "https://contents.mediadecathlon.com/m5876901/k$d4802a4582271c0e9ac299884e5bd9b3/sq/bicicleta-mountainbike-omega-thomas-275-2022-cadru-49-cm-galben.jpg?f=960x960"
+    ],
+    "stoc": "10 buc"
+
   }
- ]
+]

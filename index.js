@@ -7,7 +7,9 @@ async function getProducts() {
 
   const response = await fetch(dataBaseUrl + ".json");
   dataBaseList = await response.json();
-
+  if (dataBaseList === null) {
+    window.location="admin.html"
+      }
   console.log(dataBaseList);
   draw();
 }

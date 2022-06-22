@@ -1,9 +1,12 @@
-function getHeader() {
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-let headerHtml=`
+function getHeader() {
+  let headerHtml=`
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-  <a href="admin.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
-    <img class="btn btn-outline-light" src="/icon/logo.svg" alt=""> Admin
+   <a href="admin.html" data-bs-toggle="tooltip"  data-bs-placement="right" 
+   data-bs-custom-class="custom-tooltip" title="Administrator" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
+    <img class="btn btn-outline-light " src="/icon/logo.svg" alt=""> 
   </a>
   <ul class="nav nav-pills">
     <li class="nav-item">

@@ -15,8 +15,7 @@ async function getAdminProducts() {
   } else {
     state.product = dataBaseList;
   }
-  //console.log(dataBaseList);
-  adminDraw();  
+  adminDraw();
 }
 
 // functia de desenare html
@@ -53,7 +52,7 @@ function adminDraw() {
             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
           </svg>       
           </button>
-          <button href="#" onclick="deleteProduct('${i}')" class="btn btn-outline-secondary btn-md" id="liveAlertBtn" >STERGE
+          <button href="#" onclick="editProduct('${i}')" class="btn btn-outline-secondary btn-md" id="liveAlertBtn" data-bs-toggle="modal" data-bs-target="#staticBackdropDelete" >STERGE
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
               <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
               <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
@@ -69,21 +68,19 @@ function adminDraw() {
     </div> 
   </div>
 `;
-      console.log(i);
-      // console.log(product);
     }
   }
   stringHtml += `  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!--Add and Edit Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"  name=" " data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Articol</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close"  onclick="resetForm(event)" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form onsubmit="addProduct(event)" >
+          <form id="addProductForm"onsubmit="addProduct(event)" >
            <div class="input-group mb-3">
             <span class="input-group-text">Denumire</span>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Bicicleta" name="title">
@@ -94,7 +91,7 @@ function adminDraw() {
            </div>
            <div class="input-group col-md-2 mb-3">
              <span class="input-group-text">Pret articol</span>
-             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Pret" name="price">
+             <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Pret" name="price">
              <span class="input-group-text">RON</span>
            </div>
            <div class="input-group col-md-2 mb-3">
@@ -117,21 +114,42 @@ function adminDraw() {
         </form>   
          </div>
         <div class="modal-footer">
-        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Inchide</button>
+        <button type="button" class="btn btn-secondary " onclick="resetForm(event)" data-bs-dismiss="modal">Inchide</button>
         <input type="submit" class="btn btn-primary submitBtn " onclick="addProduct(event)" value="Salveaza">
         </div>
       </div>
     </div>
-  </div>`;
+  </div>;
+  
+  <!-- Delete Modal -->
+  <div class="modal fade" id="staticBackdropDelete" data-bs-backdrop="static"  name=" " data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Stergere articol</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"  onclick="resetForm(event)" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <form onsubmit="addProduct(event)" >
+            <div class="input-group mb-3">
+            <span class="text" name="title">Doriti sa stergeti articolul ?</span>
+            </div>
+          </div>
+        </form>   
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary " onclick="resetForm(event)"  data-bs-dismiss="modal">Inchide</button>
+        <input type="submit" class="btn btn-danger submitBtn " onclick="deleteProduct(event)" value="Sterge">
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
   document.querySelector("#adminContent").innerHTML = stringHtml;
 }
 
 //  functia de editare produs
 function editProduct(idx) {
   let elem = state.product[idx];
-  console.log(elem);
-  console.log("am intrat pe edit");
-  console.log(dataBaseList);
   document.querySelector("[name='title']").value = elem.title;
   document.querySelector("[name='description']").value = elem.description;
   document.querySelector("[name='stock']").value = elem.stock;
@@ -145,11 +163,24 @@ function editProduct(idx) {
 }
 
 // functia de stergere produs
-async function deleteProduct(idx) {
-  response = await fetch(dataBaseUrl + idx + "/.json", {
+async function deleteProduct(event) {
+  event.preventDefault();
+  let title = document.querySelector("[name='title']").value.trim();
+  let description = document.querySelector("[name='description']").value.trim();
+  let stock = document.querySelector("[name='stock']").value.trim();
+  let price = document.querySelector("[name='price']").value.trim();
+  let pictureInputs = document.querySelectorAll("[name='photoProduct']");
+  let pictures = [];
+  for (let input of pictureInputs) {
+    if (input.value !== "") {
+      pictures.push(input.value);
+    }
+  }
+  let response = await fetch(dataBaseUrl + state.idxEdit + "/.json", {
     method: "DELETE",
   });
-  product = await response.json();
+
+  state.idxEdit = null;
   window.location = "admin.html";
 }
 
@@ -195,4 +226,8 @@ async function addProduct(event) {
     state.idxEdit = null;
   }
   window.location = "admin.html";
+}
+function resetForm(event) {
+  event.preventDefault(event);
+  document.querySelector("#addProductForm").reset();
 }

@@ -25,7 +25,7 @@ for (let [i,product] of Object.entries(dataBaseList)) {
   }
     stringHtml+=`
     <div class="gap-8 col-lg-4 col-md-6 col-sm-8"> 
-    <div class="card" > 
+    <div class="card h-100" > 
      <div class=" d-md-flex justify-content-md-end">
      <a href="details.html?id=${i}">
      <button  class="btn btn-outline-secondary me-md-2 btn-lg"> DETALII

@@ -23,19 +23,19 @@ async function getDetailProduct() {
 function detailsDraw() {
   let stringHtml = "";
   stringHtml += `
-      <div id="addToCartAlert" class="alert alert-success " role="alert" >Articolul a fost adaugat in cos
+       <div id="addToCartAlert" class="alert alert-success " role="alert" >Articolul a fost adaugat in cos
        </div>
-    <div id="detailsContent" class="row row-cols-2">  
+     <div id="detailsContent" class="row row-cols-2 ">  
       <div id="carouselExampleControls" class="carousel slide col" data-bs-ride="carousel">
-       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="${dataBaseProduct.photo[0]}" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
+       <div class="carousel-inner h-80">
+        <div class="carousel-item active ">
+          <img src="${dataBaseProduct.photo[0]}" class="img-thumbnail img-thumbnail float-sm-start " alt="poza produs">
         </div>
         <div class="carousel-item">
-          <img src="${dataBaseProduct.photo[1]}" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
+          <img src="${dataBaseProduct.photo[1]}" class="img-thumbnail img-thumbnail float-sm-start" alt="poza produs">
         </div>
         <div class="carousel-item">
-          <img src="${dataBaseProduct.photo[2]}" class="img-thumbnail img-thumbnail float-sm-start" alt="...">
+          <img src="${dataBaseProduct.photo[2]}" class="img-thumbnail img-thumbnail float-sm-start" alt="poza produs">
         </div>
       </div> 
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -62,13 +62,11 @@ function detailsDraw() {
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
            </svg>
           </button>
-        </div>
-      </div>
+         </div>
+         <div id="maximCartAlert" class="alert alert-danger  fw-bold" role="alert" >Cantitatea maxima a produselor este ${dataBaseProduct.stock}
+         </div>
+     </div>
     </div>
-
-    <div id="maximCartAlert" class="alert alert-danger  fw-bold" role="alert" >Cantitatea maxima a produselor este ${dataBaseProduct.stock}
-    </div>
-
 `;
   document.querySelector("#detailsContent").innerHTML = stringHtml;
 }

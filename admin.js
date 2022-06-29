@@ -119,7 +119,7 @@ function adminDraw() {
         </div>
       </div>
     </div>
-  </div>;
+  </div>
   
   <!-- Delete Modal -->
   <div class="modal fade" id="staticBackdropDelete" data-bs-backdrop="static"  name=" " data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

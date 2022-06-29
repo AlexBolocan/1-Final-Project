@@ -38,7 +38,7 @@ for (let [i,product] of Object.entries(dataBaseList)) {
         <img src=${product.photo[0]} class="card-img-top" alt="...">
      <div class="card-body">
        <h4 class="card-title">${product.title}</h4>
-       <p class="card-text">${product.price}</p>
+       <p class="card-text">Pret: ${product.price} RON</p>
         </div>
    </div>
   </div>

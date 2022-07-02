@@ -10,7 +10,6 @@ async function getProducts() {
   if (dataBaseList === null) {
     window.location="admin.html"
       }
-  console.log(dataBaseList);
   draw();
 }
 

@@ -188,7 +188,7 @@ async function addProduct(event) {
   event.preventDefault();
   let title = document.querySelector("[name='title']").value.trim();
   let description = document.querySelector("[name='description']").value.trim();
-  let stock = document.querySelector("[name='stock']").value.trim();
+  let stock = Number(document.querySelector("[name='stock']").value.trim());
   let price = document.querySelector("[name='price']").value.trim();
   let pictureInputs = document.querySelectorAll("[name='photoProduct']");
   let pictures = [];
@@ -226,6 +226,7 @@ async function addProduct(event) {
   }
   window.location = "admin.html";
 }
+
 function resetForm(event) {
   event.preventDefault(event);
   document.querySelector("#addProductForm").reset();

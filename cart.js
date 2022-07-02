@@ -48,7 +48,7 @@ function getCart() {
           <h5 class=" card-text text-center">Cost total : ${totalPriceCart} RON</h5>
          </div>
          <div class="h-100 col-md-2 justify-content-end text-end" >
-          <button onclick="buyProducts()" class="text-end btn btn-outline-success" type="button">Cumpara  
+          <button onclick="buyProducts(event)" class="text-end btn btn-outline-success" type="button">Cumpara  
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
           <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
         </svg></button>
@@ -60,8 +60,8 @@ function getCart() {
     for (let i = 0; i < cart.length; i++) {
       stringHtml += ` 
           <div class="card p-2 mb-2 justify-content-evenly text-end">
-            <div class=" d-md-flex justify-content-end" style="max-width: 100rem;">
-             <div class="input-group-text bg-light text-dark" ><a style="width:350px"; href="details.html?id=${
+            <div class=" d-md-flex mb-2 justify-content-end" style="max-width: 100rem;">
+             <div class="input-group-text bg-light text-dark" ><a style="max-width:350px"; href="details.html?id=${
                cart[i].idProdus
              }"> ${cart[i].title}</a></div>
               <span class="input-group-text bg-light text-dark justify-content-end "style="min-width: 100px;">Pret: ${
@@ -75,7 +75,7 @@ function getCart() {
                 <button onclick="incrProductToCart(${i})" class="btn btn-outline-secondary" type="button">+</button>
                <span class="input-group-text">BUC</span>  
              </span>
-              <span class="input-group-text bg-light text-dark justify-content-end " style="min-width:350px;">TOTAL: ${
+              <span class="input-group-text bg-light text-dark justify-content-end " style="min-width:250px;">TOTAL: ${
                 Number(cart[i].pret) * Number(cart[i].cantitate)
               } RON</span>
              <button onclick="deleteProduct(${i})" class="btn btn-outline-danger" type="button" id="button-addon2" >Sterge 
@@ -133,7 +133,6 @@ function decrProductToCart(idx) {
 
 // functia de verificare produs
 async function checkStockAvailability(idx) {
-  console.log("am intrat pe checkStock");
   let productFound = false;
   var myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
   cart = localStorage.getItem("cart");
@@ -179,8 +178,8 @@ async function checkStockAvailability(idx) {
         localStorage.setItem("cart", JSON.stringify(cart));
         getCart();
       }
-
-    if (Number(state.product.price) !== Number(cart[idx].pret)) {
+      // update price if change
+      if (Number(state.product.price) !== Number(cart[idx].pret)) {
         let stringHtml = `
     <p class="fs-3"> Pretul produselor din cos a fost actaulizat.</p>
     `;
@@ -216,4 +215,46 @@ function checkValue(idx) {
 }
 
 // functia de finalizare comanda => sterge locat storage si stocul produselor
-function buyProducts() {}
+async function buyProducts(event) {
+  event.preventDefault();
+  let cart = localStorage.getItem("cart");
+  cart = JSON.parse(cart);
+  const response = await fetch(dataBaseUrl + ".json");
+  dataBaseList = await response.json();
+  state.product = dataBaseList;
+  console.log(state.product);
+  console.log(cart);
+  // update data base stock 
+  for (let [i, product] of Object.entries(dataBaseList)) {
+    let title = product.title;
+    let description = product.description;
+    let stock = product.stock;
+    let price = product.price;
+    let pictures = product.photo;
+    for (let idx = 0; idx < cart.length; idx++) {
+      if (i === cart[idx].idProdus) {
+        console.log("sunt egale");
+        console.log(Number(product.stock));
+        let productStock = Number(product.stock);
+        let storageStock = Number(cart[idx].cantitate);
+        stock = productStock - storageStock;
+         let response = await fetch(
+           dataBaseUrl + cart[idx].idProdus + "/.json",
+           {
+             method: "PUT",
+             body: JSON.stringify({
+               title: title,
+               description: description,
+               price: price,
+               stock: stock,
+               photo: pictures,
+             }),
+           }
+         );
+         cart.splice(idx, 1);
+         localStorage.setItem("cart", JSON.stringify(cart));
+       }
+    }
+  }
+  getCart();
+}

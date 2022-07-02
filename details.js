@@ -22,7 +22,8 @@ async function getDetailProduct() {
 function detailsDraw() {
   let stringHtml = "";
   stringHtml += `
-       <div id="addToCartAlert" class="alert alert-success " role="alert" >Articolul a fost adaugat in cos
+       <div id="addToCartAlert" >
+         <p class="alert alert-success fs-4" role="alert" >Articolul a fost adaugat in cos</p>
        </div>
      <div id="detailsContent" class="row row-cols-2 ">  
       <div id="carouselExampleControls" class="carousel slide col" data-bs-ride="carousel">
@@ -46,13 +47,14 @@ function detailsDraw() {
           <span class="visually-hidden">Next</span>
        </button>
     </div>
-    <div class="col ">
-        <div> 
-         <h1 class="display-6">${dataBaseProduct.description}</h1></div>
+    <div id="stockEmpty" class="col ">
+        <div > 
+         <h1 class="display-6">${dataBaseProduct.description}</h1>
+        </div>
          <hr>
          <div class="d-flex justify-content-center mb-3">
-         <h4 class="text-xl-start p-2 flex-fill"> Pret: ${dataBaseProduct.price} RON</h4>
-         <h4 class="text-xl-start p-2 flex-fill" name=""> ${dataBaseProduct.stock} buc in stoc</h4>
+            <h4 class="text-xl-start p-2 flex-fill"> Pret: ${dataBaseProduct.price} RON</h4>
+            <h4 class="text-xl-start p-2 flex-fill" name=""> ${dataBaseProduct.stock} buc in stoc</h4>
          </div> 
          <div class="input-group mb-8">
           <input type="number" onchange="quantityChange()" class="form-control" placeholder="Stock" aria-label="Add part on stock" aria-describedby="button-addon2" name="cantitate" value="1">
@@ -62,12 +64,29 @@ function detailsDraw() {
            </svg>
           </button>
          </div>
-         <div id="maximCartAlert" class="alert alert-danger  fw-bold" role="alert" >Cantitatea maxima a produselor este ${dataBaseProduct.stock}
+         <div id="maximCartAlert" >
+            <P class="alert alert-danger fs-2 fw-bold" role="alert">Cantitatea maxima a produselor este ${dataBaseProduct.stock}</p>
          </div>
      </div>
     </div>
 `;
   document.querySelector("#detailsContent").innerHTML = stringHtml;
+
+  if(dataBaseProduct.stock===0){
+    let stringStockEmpty=`
+    <div > 
+    <h1 class="display-6">${dataBaseProduct.description}</h1>
+   </div>
+    <hr>
+    <div class="d-flex justify-content-center mb-3">
+       <p class="text-xl-start p-2 flex-fill fs-3"> Produsul nu mai este disponibil</p>   
+    </div> 
+  </div>
+ </div> 
+`;
+document.querySelector("#stockEmpty").innerHTML = stringStockEmpty;
+  }
+
 }
 
 // functia care adauga produsul in cos
@@ -122,6 +141,7 @@ function quantityChange() {
   document.querySelector("#addToCartAlert").classList.add("fade");
   let cantitate = document.querySelector("[name='cantitate']").value;
   cantitate = Number(cantitate);
+
   if (isNaN(cantitate) || cantitate <= 0) {
     document.querySelector("[name='cantitate']").value=1;
     return;
@@ -131,7 +151,6 @@ function quantityChange() {
     document.querySelector("#maximCartAlert").classList.add("show");
     document.querySelector("#maximCartAlert").classList.remove("fade");
     document.querySelector("[name='cantitate']").value=dataBaseProduct.stock;
-      return;
+    return;
   }
-
 }

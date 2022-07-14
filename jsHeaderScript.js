@@ -1,6 +1,3 @@
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-
 function getHeader() {
   let headerHtml=`
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">

@@ -99,23 +99,23 @@ function adminDraw() {
              <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Stoc" name="stock">
              <span class="input-group-text">buc</span>
             </div>
-             <div id=""class="input-group col-md-6 mb-3" >
+             <div id=""class="input-group col-md-6 mb-3 form-check" >
               <div class="input-group-text">Poza 1</div>
               <input "type="text" class="form-control" aria-describedby="button-addon1" placeholder="poza articol" name="photoProduct">
              </div>
-              <div class="input-group col-md-6 mb-3" >
+              <div class="input-group col-md-6 mb-3 form-check" >
               <div class="input-group-text">Poza 2</div>
               <input type="text" class="form-control"  aria-describedby="button-addon1" placeholder="poza articol" name="photoProduct" >
               </div>
-              <div class="input-group col-md-6 mb-3" >
+              <div class="input-group col-md-6 mb-3 form-check" >
               <div class="input-group-text">Poza 3</div>
               <input type="text" class="form-control" aria-describedby="button-addon1" placeholder="poza articol" name="photoProduct" >
              </div>
         </form>   
          </div>
-        <div class="modal-footer">
+        <div id="" class="modal-footer">
         <button type="button" class="btn btn-secondary " onclick="resetForm(event)" data-bs-dismiss="modal">Inchide</button>
-        <input type="submit" class="btn btn-success submitBtn " onclick="addProduct(event)" value="Salveaza">
+        <input id="confirmFrom" type="submit" class="btn btn-success submitBtn" onclick="addProduct(event)" value="Salveaza"  >
         </div>
       </div>
     </div>
@@ -197,33 +197,45 @@ async function addProduct(event) {
       pictures.push(input.value);
     }
   }
-  if (state.idxEdit === null) {
-    //vreau sa adaug un element nou in lista
-    let response = await fetch(dataBaseUrl + ".json", {
-      method: "POST",
-      body: JSON.stringify({
-        title: title,
-        description: description,
-        price: price,
-        stock: stock,
-        photo: pictures,
-      }),
-    });
-  } else {
-    //aici sunt in timpul editarii
-    let response = await fetch(dataBaseUrl + state.idxEdit + "/.json", {
-      method: "PUT",
-      body: JSON.stringify({
-        title: title,
-        description: description,
-        price: price,
-        stock: stock,
-        photo: pictures,
-      }),
-    });
 
-    state.idxEdit = null;
+  if (
+    title === "" ||
+    description === "" ||
+    stock === 0 ||
+    price === "" ||
+    pictures.length === 0
+  ) { 
+
+  } else {
+    if (state.idxEdit === null) {
+      //vreau sa adaug un element nou in lista
+      let response = await fetch(dataBaseUrl + ".json", {
+        method: "POST",
+        body: JSON.stringify({
+          title: title,
+          description: description,
+          price: price,
+          stock: stock,
+          photo: pictures,
+        }),
+      });
+    } else {
+      //aici sunt in timpul editarii
+      let response = await fetch(dataBaseUrl + state.idxEdit + "/.json", {
+        method: "PUT",
+        body: JSON.stringify({
+          title: title,
+          description: description,
+          price: price,
+          stock: stock,
+          photo: pictures,
+        }),
+      });
+
+      state.idxEdit = null;
+    }
   }
+
   window.location = "admin.html";
 }
 

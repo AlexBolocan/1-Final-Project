@@ -1,6 +1,6 @@
 function getHeader() {
   let headerHtml=`
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top ">
    <a href="admin.html" data-bs-toggle="tooltip"  data-bs-placement="right" 
    data-bs-custom-class="custom-tooltip" title="Administrator" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
     <img class="btn btn-outline-light " src="" alt=""> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 1000 1000">
@@ -10,7 +10,7 @@ function getHeader() {
   </svg>
   Admin
   </a>
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills ">
     <li class="nav-item">
       <a href="index.html" id="idPageHome"class="nav-link active " aria-current="page">Acasa
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 20 20">
